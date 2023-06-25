@@ -1,0 +1,17 @@
+logging:
+  level:
+    org:
+      springframework:
+        security: trace
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google-idp:
+            provider: google
+            client-id: 527593544208-u0omj7glte9ugsqko6s86hqmrt8mop21.apps.googleusercontent.com
+            client-secret: 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
+            scope: openid
+            client-name: Sign in with Google
