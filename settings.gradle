@@ -9,4 +9,4 @@
 
 rootProject.name = 'e-commerce-co-project'
 
-include 'bff'
+include 'bff', 'frontend'
