@@ -15,6 +15,7 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http
                 .csrf().disable()
+                .authorizeRequests().antMatchers("/", "/home").permitAll().and()
                 .formLogin(Customizer.withDefaults())
                 .oauth2Login().and()
                 .build();
